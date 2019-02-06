@@ -624,7 +624,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="k18-QT-05n">
             <objects>
-                <tabBarController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" id="IvY-qb-56P" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" id="IvY-qb-56P" customClass="TabBarController" customModule="Carbash_healthy_food" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u3h-pO-ges">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

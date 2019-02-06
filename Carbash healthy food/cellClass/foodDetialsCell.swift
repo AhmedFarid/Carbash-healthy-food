@@ -10,15 +10,13 @@ import UIKit
 
 class foodDetialsCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var qun: UILabel!
+    
+    func configuerCell(prodect: mailDetials) {
+        
+        
+        name.text = " مكونات الوجبه:\(prodect.name)"
+        qun.text = " الكمية: \(prodect.qty)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

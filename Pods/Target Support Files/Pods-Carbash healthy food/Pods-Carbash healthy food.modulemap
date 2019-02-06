@@ -1,0 +1,6 @@
+framework module Pods_Carbash_healthy_food {
+  umbrella header "Pods-Carbash healthy food-umbrella.h"
+
+  export *
+  module * { export * }
+}

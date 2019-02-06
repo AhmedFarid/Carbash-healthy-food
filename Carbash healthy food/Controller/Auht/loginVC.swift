@@ -42,5 +42,33 @@ class loginVC: UIViewController {
     
     
     @IBAction func loginBtn(_ sender: Any) {
+        
+        guard let userName = email.text, !userName.isEmpty else {
+            let messages = NSLocalizedString("enter your Email", comment: "hhhh")
+            let title = NSLocalizedString("Login Filed", comment: "hhhh")
+            self.showAlert(title: title, message: messages)
+            return
+        }
+        
+        guard let passwords = password.text, !passwords.isEmpty else {
+            let messages = NSLocalizedString("enter your password", comment: "hhhh")
+            let title = NSLocalizedString("Login Filed", comment: "hhhh")
+            self.showAlert(title: title, message: messages)
+            return
+        }
+        
+        API_Auth.login(email: email.text ?? "" , password: password.text ?? "") { (error: Error?, success: Bool, data) in
+            if success {
+                if data == nil {
+                    print("success")
+                }else {
+                    self.showAlert(title: "Login Filed", message: "\(data ?? "")")
+                }
+                //
+            }else {
+                self.showAlert(title: "Login Filed", message: "\(data ?? "")")
+            }
+            
+        }
     }
 }
