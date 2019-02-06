@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8X9-RK-s2q">
+                                <rect key="frame" x="88" y="170" width="144" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8X9-RK-s2q" secondAttribute="height" multiplier="199:146" id="Mns-rW-9Zx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنبحث لك عن الأفضل !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9Z-pi-xjB">
+                                <rect key="frame" x="19" y="301" width="282" height="52.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="28"/>
+                                <color key="textColor" red="0.0080331843350000005" green="0.58014976979999999" blue="0.29357984660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS0-Xx-QE0">
+                                <rect key="frame" x="46.5" y="382" width="227.5" height="112.5"/>
+                                <string key="text">احصل على المتعة مع أفضل
+الأطعمة الصحية
+وجعل حياتك صحية !</string>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MS0-Xx-QE0" firstAttribute="top" secondItem="e9Z-pi-xjB" secondAttribute="bottom" constant="28.5" id="7yo-g3-ym4"/>
+                            <constraint firstItem="8X9-RK-s2q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Dfy-BE-fnv"/>
+                            <constraint firstItem="8X9-RK-s2q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="OD3-vm-kuM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8X9-RK-s2q" secondAttribute="trailing" constant="88" id="VgK-ot-XQe"/>
+                            <constraint firstItem="MS0-Xx-QE0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="e3J-um-k6o"/>
+                            <constraint firstItem="e9Z-pi-xjB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="l8R-7D-0BK"/>
+                            <constraint firstItem="e9Z-pi-xjB" firstAttribute="top" secondItem="8X9-RK-s2q" secondAttribute="bottom" constant="25.5" id="vnR-Bd-ywf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="199" height="146"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cvP-Xh-dDG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nRZ-6s-ZMq">
+            <objects>
+                <viewController id="dO2-CV-nqA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HMq-Vi-01Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pP7-sx-x40">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pP7-sx-x40" firstAttribute="top" secondItem="L6p-G7-bU3" secondAttribute="top" id="0KV-FS-bpf"/>
+                            <constraint firstItem="L6p-G7-bU3" firstAttribute="trailing" secondItem="pP7-sx-x40" secondAttribute="trailing" id="7H1-QP-B8z"/>
+                            <constraint firstItem="pP7-sx-x40" firstAttribute="leading" secondItem="L6p-G7-bU3" secondAttribute="leading" id="kCa-dq-1Ro"/>
+                            <constraint firstItem="L6p-G7-bU3" firstAttribute="bottom" secondItem="pP7-sx-x40" secondAttribute="bottom" id="q4i-ro-kG5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L6p-G7-bU3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="My Cart" id="keL-qT-r52"/>
+                    <navigationItem key="navigationItem" id="fWC-L7-qPB">
+                        <rightBarButtonItems>
+                            <barButtonItem image="favorite-heart-button" id="Vdc-SW-l8Q"/>
+                            <barButtonItem image="notifications-button" id="R0F-TT-BUE"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woz-gR-KqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="81"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="e5n-Uw-6bg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cvP-Xh-dDG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="akY-kr-3Vp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="Zem-x8-MKZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0080331843350000005" green="0.58014976979999999" blue="0.29357984660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dO2-CV-nqA" kind="relationship" relationship="rootViewController" id="HI3-07-tom"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUY-i4-AZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="My Cart" width="25" height="25"/>
+        <image name="favorite-heart-button" width="20" height="20"/>
+        <image name="notifications-button" width="20.5" height="20.5"/>
+    </resources>
+</document>
