@@ -10,15 +10,15 @@ import UIKit
 
 class myorderDetials: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var mealFoodsName: UILabel!
+    @IBOutlet weak var mealFoodsPrice: UILabel!
+    @IBOutlet weak var qty: UILabel!
+    
+    
+    func configuerCell(prodect: myordersdetials) {
+        self.mealFoodsName.text = "اسم الوجيه  \(prodect.mealFoodsName)"
+        self.mealFoodsPrice.text = "السعر \(prodect.mealFoodsPrice)"
+        self.qty.text = "كميه \(prodect.qty)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

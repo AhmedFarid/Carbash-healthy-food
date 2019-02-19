@@ -30,8 +30,12 @@ struct URLs {
     static let getCart = main + "getCart"
     static let deleteCart = main + "deleteCart"
     static let minCart = main + "minCart"
-    
-    
+    static let postOrder = main + "postOrder"
+    static let getOrder = main + "getOrder"
+    static let getOrderDetails = main + "getOrderDetails"
+    static let consultings = main + "consultings"
+    static let subscribe = main + "subscribe"
+    static let getSubscribe = main + "getSubscribe"
     
     
 }

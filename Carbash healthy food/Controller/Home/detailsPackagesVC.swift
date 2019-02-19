@@ -11,6 +11,7 @@ import UIKit
 class detailsPackagesVC: UIViewController {
 
     var type = ""
+    var id = ""
     var banners = [backageBanner]()
     
     
@@ -56,6 +57,7 @@ class detailsPackagesVC: UIViewController {
                     self.price.text = "\(price ?? "") ريال "
                     self.schudel.text = type
                     self.des.text = "\(description ?? "")"
+                    self.id = id ?? ""
                 }
             }else {
                 print("error")
@@ -78,6 +80,13 @@ class detailsPackagesVC: UIViewController {
     
     
     @IBAction func subbutton(_ sender: Any) {
+        API_Package.subscribe(package_id: id){ (error: Error?, success: Bool, data) in
+            if success {
+                self.showAlert(title: "اشتراك", message: data ?? "")
+            }else {
+                
+            }
+        }
     }
     
 }

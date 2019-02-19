@@ -10,15 +10,12 @@ import UIKit
 
 class myBakageCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var status: UILabel!
+    
+    func configuerCell(prodect: packages) {
+        self.date.text = "\(prodect.day)\n\(prodect.due)"
+        self.status.text = "\(prodect.status)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

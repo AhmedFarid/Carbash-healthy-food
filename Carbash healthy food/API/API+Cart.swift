@@ -40,7 +40,7 @@ class API_Cart: NSObject {
             case .success(let value):
                 print(value)
                 let json = JSON(value)
-                guard let dataArray = json["message"].array else{
+                guard let dataArray = json["message"]["data"].array else{
                     completion(nil, nil)
                     return
                 }
@@ -136,6 +136,53 @@ class API_Cart: NSObject {
                     let data = json["message"].string
                     print(data ?? "no")
                     completion(nil, true, data)
+                }
+                
+            }
+        }
+        
+    }
+    
+    class func orderCart(phone: String,address: String, lat: Double, lng: Double, completion: @escaping (_ error: Error?, _ success: Bool, _ data: Int?, _ totalePrice: Int?)->Void) {
+        
+        
+        guard let user_token = helper.getAPIToken() else {
+            completion(nil,false,nil,nil)
+            return
+        }
+        let url = URLs.postOrder
+        
+        
+        print(url)
+        let parameters = [
+            "user_token" : user_token,
+            "phone": phone,
+            "address": address,
+            "lat": lat,
+            "lng": lng
+            ] as [String : Any]
+        
+        print(parameters)
+        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil) .responseJSON { response in
+            switch response.result
+            {
+            case .failure(let error):
+                completion(error, false, nil, nil)
+                print(error)
+                //self.showAlert(title: "Error", message: "\(error)")
+                
+            case .success(let value):
+                let json = JSON(value)
+                print(value)
+                if let user_token = json["message"]["userToken"].string {
+                    print("user token \(user_token)")
+                    helper.saveAPIToken(token: user_token)
+                    completion(nil, true , nil,nil)
+                }else {
+                    let data = json["message"]["orderId"].int
+                    let totalePrice = json["message"]["total"].int
+                    print(data ?? "no")
+                    completion(nil, true, data,totalePrice)
                 }
                 
             }

@@ -9,16 +9,19 @@
 import UIKit
 
 class myordersCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var pricce: UILabel!
+    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
+    
+    func configuerCell(prodect: myorders) {
+        self.phone.text = " الهاتف \(prodect.phone)"
+        self.id.text =  "رقم الطلب \(prodect.orderId)"
+        self.address.text = "العنوان  \(prodect.address)"
+        self.pricce.text = "السعر \(prodect.totalPrice)"
+        self.date.text = "تاريخ الطلب \(prodect.date)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

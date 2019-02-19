@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		166FF3F4B2C2B9E0A4F62423 /* Pods_Carbash_healthy_food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C725145A7FA28F96343C924F /* Pods_Carbash_healthy_food.framework */; };
 		751A13EB2209C6340027B1F0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A13EA2209C6340027B1F0 /* TabBarController.swift */; };
+		75304647220C5D23009E2856 /* orderCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304646220C5D23009E2856 /* orderCartVC.swift */; };
+		75304649220C76F3009E2856 /* API + Myorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304648220C76F3009E2856 /* API + Myorder.swift */; };
+		7530464B220C8055009E2856 /* myordersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530464A220C8055009E2856 /* myordersCell.swift */; };
+		7530464E220C8262009E2856 /* myOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530464D220C8262009E2856 /* myOrdersVC.swift */; };
+		75304650220C878D009E2856 /* myorderDetials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530464F220C878D009E2856 /* myorderDetials.swift */; };
+		75304652220C8940009E2856 /* myOrdersDetialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304651220C8940009E2856 /* myOrdersDetialsVC.swift */; };
+		75304654220C8BEC009E2856 /* API + Consultings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304653220C8BEC009E2856 /* API + Consultings.swift */; };
+		75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304655220C8DB2009E2856 /* consultingsVC.swift */; };
+		75821D2D221161590067DF96 /* API + Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2C221161590067DF96 /* API + Package.swift */; };
+		75821D2F221174750067DF96 /* packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2E221174750067DF96 /* packages.swift */; };
+		75821D312211794D0067DF96 /* myBakageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D302211794D0067DF96 /* myBakageCell.swift */; };
+		75821D3322117DE30067DF96 /* myPackagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D3222117DE30067DF96 /* myPackagesVC.swift */; };
 		7582BE982200E4EA0016FC9A /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582BE972200E4EA0016FC9A /* loginVC.swift */; };
 		7582BE9A2200E64F0016FC9A /* signupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582BE992200E64F0016FC9A /* signupVC.swift */; };
 		7582BE9C2200EB940016FC9A /* textimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582BE9B2200EB940016FC9A /* textimage.swift */; };
@@ -56,6 +68,18 @@
 		28D79F6B2AAED1C34644B145 /* Pods-Carbash healthy food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carbash healthy food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carbash healthy food/Pods-Carbash healthy food.debug.xcconfig"; sourceTree = "<group>"; };
 		465EA4C88B2DFE4A5207158C /* Pods-Carbash healthy food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carbash healthy food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carbash healthy food/Pods-Carbash healthy food.release.xcconfig"; sourceTree = "<group>"; };
 		751A13EA2209C6340027B1F0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		75304646220C5D23009E2856 /* orderCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCartVC.swift; sourceTree = "<group>"; };
+		75304648220C76F3009E2856 /* API + Myorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Myorder.swift"; sourceTree = "<group>"; };
+		7530464A220C8055009E2856 /* myordersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myordersCell.swift; sourceTree = "<group>"; };
+		7530464D220C8262009E2856 /* myOrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersVC.swift; sourceTree = "<group>"; };
+		7530464F220C878D009E2856 /* myorderDetials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myorderDetials.swift; sourceTree = "<group>"; };
+		75304651220C8940009E2856 /* myOrdersDetialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersDetialsVC.swift; sourceTree = "<group>"; };
+		75304653220C8BEC009E2856 /* API + Consultings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Consultings.swift"; sourceTree = "<group>"; };
+		75304655220C8DB2009E2856 /* consultingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consultingsVC.swift; sourceTree = "<group>"; };
+		75821D2C221161590067DF96 /* API + Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Package.swift"; sourceTree = "<group>"; };
+		75821D2E221174750067DF96 /* packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packages.swift; sourceTree = "<group>"; };
+		75821D302211794D0067DF96 /* myBakageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBakageCell.swift; sourceTree = "<group>"; };
+		75821D3222117DE30067DF96 /* myPackagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPackagesVC.swift; sourceTree = "<group>"; };
 		7582BE972200E4EA0016FC9A /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		7582BE992200E64F0016FC9A /* signupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupVC.swift; sourceTree = "<group>"; };
 		7582BE9B2200EB940016FC9A /* textimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textimage.swift; sourceTree = "<group>"; };
@@ -114,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7530464C220C8245009E2856 /* MyOrders */ = {
+			isa = PBXGroup;
+			children = (
+				7530464D220C8262009E2856 /* myOrdersVC.swift */,
+				75304651220C8940009E2856 /* myOrdersDetialsVC.swift */,
+			);
+			path = MyOrders;
+			sourceTree = "<group>";
+		};
 		7582BE952200E3200016FC9A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +163,7 @@
 		7582BE962200E3850016FC9A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7530464C220C8245009E2856 /* MyOrders */,
 				758E77EC2208780000046DBC /* Cart */,
 				75B362C622032B8400782D51 /* Profile */,
 				7591AB6D2201E1190077413C /* Home */,
@@ -142,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				758E77ED2208782E00046DBC /* cartVC.swift */,
+				75304646220C5D23009E2856 /* orderCartVC.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -177,6 +212,7 @@
 				7587856222073E9A00CE0397 /* mealVC.swift */,
 				758E77E422081D8500046DBC /* PackagesVC.swift */,
 				758E77E622081EC400046DBC /* detailsPackagesVC.swift */,
+				75304655220C8DB2009E2856 /* consultingsVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +224,9 @@
 				75B362C9220331B300782D51 /* API+Profile.swift */,
 				758785582206F3DE00CE0397 /* API+Home.swift */,
 				75AE052A2209870500CCD579 /* API+Cart.swift */,
+				75304648220C76F3009E2856 /* API + Myorder.swift */,
+				75304653220C8BEC009E2856 /* API + Consultings.swift */,
+				75821D2C221161590067DF96 /* API + Package.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -200,6 +239,9 @@
 				7587856022072B1600CE0397 /* foodDetialsCell.swift */,
 				758E77E822083D9300046DBC /* backageBanners.swift */,
 				75AE052C22098BB800CCD579 /* cartCell.swift */,
+				7530464A220C8055009E2856 /* myordersCell.swift */,
+				7530464F220C878D009E2856 /* myorderDetials.swift */,
+				75821D302211794D0067DF96 /* myBakageCell.swift */,
 			);
 			path = cellClass;
 			sourceTree = "<group>";
@@ -218,6 +260,7 @@
 			children = (
 				758785562206F38400CE0397 /* home.swift */,
 				75AE0528220985CD00CCD579 /* Cart.swift */,
+				75821D2E221174750067DF96 /* packages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +279,7 @@
 				75B362C722032D1A00782D51 /* profileVC.swift */,
 				75B362CB22034B9500782D51 /* editProfileVC.swift */,
 				758785522206DCC900CE0397 /* editPasswordVC.swift */,
+				75821D3222117DE30067DF96 /* myPackagesVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -429,35 +473,47 @@
 			files = (
 				75B362BF2202FD0F00782D51 /* API+Auth.swift in Sources */,
 				7587855B2206F4F300CE0397 /* BannerCell.swift in Sources */,
+				75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */,
 				7582BE982200E4EA0016FC9A /* loginVC.swift in Sources */,
+				75304647220C5D23009E2856 /* orderCartVC.swift in Sources */,
 				7591AB6F2201E1350077413C /* homeVC.swift in Sources */,
 				75B362C122030E1C00782D51 /* showAlert.swift in Sources */,
 				75B362CA220331B300782D51 /* API+Profile.swift in Sources */,
 				758E77E522081D8500046DBC /* PackagesVC.swift in Sources */,
+				75304654220C8BEC009E2856 /* API + Consultings.swift in Sources */,
 				75AE0529220985CD00CCD579 /* Cart.swift in Sources */,
 				758E77E922083D9300046DBC /* backageBanners.swift in Sources */,
+				75304652220C8940009E2856 /* myOrdersDetialsVC.swift in Sources */,
 				7587855F22071CB900CE0397 /* mailDeatilesVC.swift in Sources */,
+				75304650220C878D009E2856 /* myorderDetials.swift in Sources */,
 				7591AB712201F6730077413C /* roundedTxtView.swift in Sources */,
 				758785572206F38400CE0397 /* home.swift in Sources */,
 				75B362CC22034B9500782D51 /* editProfileVC.swift in Sources */,
+				7530464E220C8262009E2856 /* myOrdersVC.swift in Sources */,
 				7587855D2207115300CE0397 /* homeMaillcell.swift in Sources */,
 				758E77EB22086C7A00046DBC /* cricalImage.swift in Sources */,
 				75EB32972200A43A00B93BF4 /* AppDelegate.swift in Sources */,
+				75821D312211794D0067DF96 /* myBakageCell.swift in Sources */,
 				75B362C52203264F00782D51 /* roundedLable.swift in Sources */,
+				7530464B220C8055009E2856 /* myordersCell.swift in Sources */,
 				758785592206F3DE00CE0397 /* API+Home.swift in Sources */,
 				758E77EE2208782E00046DBC /* cartVC.swift in Sources */,
 				75AE052D22098BB800CCD579 /* cartCell.swift in Sources */,
 				7582BE9C2200EB940016FC9A /* textimage.swift in Sources */,
+				75821D3322117DE30067DF96 /* myPackagesVC.swift in Sources */,
 				758E77E722081EC400046DBC /* detailsPackagesVC.swift in Sources */,
 				7587856322073E9A00CE0397 /* mealVC.swift in Sources */,
 				7591AB6C2201D0690077413C /* roundView.swift in Sources */,
 				751A13EB2209C6340027B1F0 /* TabBarController.swift in Sources */,
 				75B362BD2202FBDA00782D51 /* Cofig.swift in Sources */,
 				758785552206EB6300CE0397 /* restPasswordVC.swift in Sources */,
+				75304649220C76F3009E2856 /* API + Myorder.swift in Sources */,
 				75B362C822032D1A00782D51 /* profileVC.swift in Sources */,
 				7582BE9A2200E64F0016FC9A /* signupVC.swift in Sources */,
+				75821D2D221161590067DF96 /* API + Package.swift in Sources */,
 				75AE052B2209870500CCD579 /* API+Cart.swift in Sources */,
 				758785532206DCC900CE0397 /* editPasswordVC.swift in Sources */,
+				75821D2F221174750067DF96 /* packages.swift in Sources */,
 				75B362C322030E3A00782D51 /* helper.swift in Sources */,
 				7587856122072B1600CE0397 /* foodDetialsCell.swift in Sources */,
 			);
@@ -606,17 +662,17 @@
 			baseConfigurationReference = 28D79F6B2AAED1C34644B145 /* Pods-Carbash healthy food.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = "Carbash healthy food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Ebakers.Carbash-healthy-food";
+				PRODUCT_BUNDLE_IDENTIFIER = Ebakers.Carbash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Ebakers.Carbash;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -627,17 +683,17 @@
 			baseConfigurationReference = 465EA4C88B2DFE4A5207158C /* Pods-Carbash healthy food.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
 				INFOPLIST_FILE = "Carbash healthy food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Ebakers.Carbash-healthy-food";
+				PRODUCT_BUNDLE_IDENTIFIER = Ebakers.Carbash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Ebakers.Carbash;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

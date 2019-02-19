@@ -17,9 +17,24 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We need Your camera to set your profile image</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need Your Location to get your order</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need Your Location to get your order</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need Your Location to get your order</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need Your galary to set your profile image</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Cairo-Bold.ttf</string>
@@ -48,14 +63,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>We need Your galary to set your profile image</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We need Your camera to set your profile image</string>
 </dict>
 </plist>

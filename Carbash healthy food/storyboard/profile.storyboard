@@ -115,6 +115,9 @@
                                                 <state key="normal" title="عرض">
                                                     <color key="titleColor" red="0.32549019610000002" green="0.4431372549" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="kyT-kt-jN1" kind="show" id="lSt-Ez-kVD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,7 +184,6 @@
                         <outlet property="image" destination="cA1-in-OdF" id="6ZG-1w-I3R"/>
                         <outlet property="name" destination="3cc-XJ-Xd1" id="PlI-Jh-Pj4"/>
                         <outlet property="phone" destination="rft-o2-WfH" id="rLm-1C-9w8"/>
-                        <segue destination="kyT-kt-jN1" kind="show" identifier="suge2" id="mTe-kr-2Rc"/>
                         <segue destination="xmG-Bo-EV5" kind="show" identifier="suge" id="y8Z-gK-3mU"/>
                     </connections>
                 </viewController>
@@ -189,20 +191,148 @@
             </objects>
             <point key="canvasLocation" x="1236" y="95.802098950524751"/>
         </scene>
-        <!--View Controller-->
+        <!--اشتراكاتي-->
         <scene sceneID="neQ-dM-bIh">
             <objects>
-                <viewController id="kyT-kt-jN1" sceneMemberID="viewController">
+                <viewController id="kyT-kt-jN1" customClass="myPackagesVC" customModule="Carbash_healthy_food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ht8-BZ-J6V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" انت لست مشترك في اي بقاه" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBU-HN-BMq">
+                                <rect key="frame" x="71" y="309.5" width="233.5" height="34"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rce-2F-BMD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rce-2F-BMD" secondAttribute="height" multiplier="15:8" id="fuo-HC-DOo"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJD-e6-84g">
+                                <rect key="frame" x="16" y="248" width="343" height="26.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-bN-TED">
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-FN-QfS">
+                                        <rect key="frame" x="121" y="0.0" width="101" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-0p-Vai">
+                                        <rect key="frame" x="242" y="0.0" width="101" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9bt-2B-mMO">
+                                <rect key="frame" x="0.0" y="274.5" width="375" height="273.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="bZ6-Na-Hcb" customClass="myBakageCell" customModule="Carbash_healthy_food" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bZ6-Na-Hcb" id="S6y-Mg-GyW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-Ng-Nyv">
+                                                    <rect key="frame" x="16" y="3" width="343" height="37.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsq-nB-RpX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="171.5" height="37.5"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOo-3D-jCf">
+                                                            <rect key="frame" x="171.5" y="0.0" width="171.5" height="37.5"/>
+                                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pfJ-Ng-Nyv" firstAttribute="top" secondItem="S6y-Mg-GyW" secondAttribute="top" constant="3" id="2Gv-Q2-5pJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="pfJ-Ng-Nyv" secondAttribute="bottom" constant="3" id="XH5-fA-hUf"/>
+                                                <constraint firstItem="pfJ-Ng-Nyv" firstAttribute="leading" secondItem="S6y-Mg-GyW" secondAttribute="leading" constant="16" id="hhJ-2C-ISn"/>
+                                                <constraint firstAttribute="trailing" secondItem="pfJ-Ng-Nyv" secondAttribute="trailing" constant="16" id="yMe-CY-Tev"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="date" destination="Fsq-nB-RpX" id="BjN-Ar-ieT"/>
+                                            <outlet property="status" destination="WOo-3D-jCf" id="uSN-Sd-ROw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-k3-81f">
+                                <rect key="frame" x="8" y="556" width="359" height="39"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <state key="normal" title="  الغاء الاشتراك في الباقة ؟ ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="kyT-kt-jN1" eventType="touchUpInside" id="dr6-Gk-XWu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crq-tq-JgN">
+                                <rect key="frame" x="8" y="208" width="359" height="32"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nBU-HN-BMq" firstAttribute="centerY" secondItem="ht8-BZ-J6V" secondAttribute="centerY" constant="25" id="3J9-Mt-O9F"/>
+                            <constraint firstItem="rce-2F-BMD" firstAttribute="leading" secondItem="gaZ-9L-VJq" secondAttribute="leading" id="Ay9-Io-6OK"/>
+                            <constraint firstItem="Jh4-k3-81f" firstAttribute="bottom" secondItem="gaZ-9L-VJq" secondAttribute="bottom" constant="-8" id="Fly-EJ-yVe"/>
+                            <constraint firstItem="9bt-2B-mMO" firstAttribute="top" secondItem="cJD-e6-84g" secondAttribute="bottom" id="G8Y-9g-NG2"/>
+                            <constraint firstItem="9bt-2B-mMO" firstAttribute="leading" secondItem="gaZ-9L-VJq" secondAttribute="leading" id="GSV-3I-LZz"/>
+                            <constraint firstItem="gaZ-9L-VJq" firstAttribute="trailing" secondItem="9bt-2B-mMO" secondAttribute="trailing" id="KpG-E3-vgh"/>
+                            <constraint firstItem="gaZ-9L-VJq" firstAttribute="trailing" secondItem="cJD-e6-84g" secondAttribute="trailing" constant="16" id="L7S-FJ-H3N"/>
+                            <constraint firstItem="Jh4-k3-81f" firstAttribute="leading" secondItem="gaZ-9L-VJq" secondAttribute="leading" constant="8" id="Oyq-7W-6NK"/>
+                            <constraint firstItem="Crq-tq-JgN" firstAttribute="top" secondItem="rce-2F-BMD" secondAttribute="bottom" constant="8" id="Qb0-T4-t7q"/>
+                            <constraint firstItem="rce-2F-BMD" firstAttribute="trailing" secondItem="gaZ-9L-VJq" secondAttribute="trailing" id="Qn6-Hb-0TS"/>
+                            <constraint firstItem="gaZ-9L-VJq" firstAttribute="trailing" secondItem="Jh4-k3-81f" secondAttribute="trailing" constant="8" id="Rmb-HR-aXw"/>
+                            <constraint firstItem="cJD-e6-84g" firstAttribute="leading" secondItem="gaZ-9L-VJq" secondAttribute="leading" constant="16" id="VAN-xz-qBM"/>
+                            <constraint firstItem="gaZ-9L-VJq" firstAttribute="trailing" secondItem="Crq-tq-JgN" secondAttribute="trailing" constant="8" id="Vv9-Ep-PRU"/>
+                            <constraint firstItem="Crq-tq-JgN" firstAttribute="leading" secondItem="gaZ-9L-VJq" secondAttribute="leading" constant="8" id="Wkl-5W-La2"/>
+                            <constraint firstItem="Jh4-k3-81f" firstAttribute="top" secondItem="9bt-2B-mMO" secondAttribute="bottom" constant="8" id="XLX-WU-IOZ"/>
+                            <constraint firstItem="nBU-HN-BMq" firstAttribute="centerX" secondItem="ht8-BZ-J6V" secondAttribute="centerX" id="fuP-Wq-h0B"/>
+                            <constraint firstItem="rce-2F-BMD" firstAttribute="top" secondItem="gaZ-9L-VJq" secondAttribute="top" id="rqE-sL-aHx"/>
+                            <constraint firstItem="cJD-e6-84g" firstAttribute="top" secondItem="Crq-tq-JgN" secondAttribute="bottom" constant="8" id="vKR-XP-pdL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gaZ-9L-VJq"/>
                     </view>
+                    <navigationItem key="navigationItem" title="اشتراكاتي" id="ZBC-Os-6vM"/>
+                    <connections>
+                        <outlet property="cancelBtn" destination="Jh4-k3-81f" id="DGP-rN-cS8"/>
+                        <outlet property="delivared" destination="Ql9-FN-QfS" id="Mny-JK-StQ"/>
+                        <outlet property="image" destination="rce-2F-BMD" id="q8z-J0-aLo"/>
+                        <outlet property="name" destination="Crq-tq-JgN" id="Qx6-eo-U3U"/>
+                        <outlet property="notSubscribe" destination="nBU-HN-BMq" id="aDd-hb-CnY"/>
+                        <outlet property="onWay" destination="EG4-0p-Vai" id="OpQ-A3-ZuW"/>
+                        <outlet property="tabelView" destination="9bt-2B-mMO" id="W15-gF-C9c"/>
+                        <outlet property="total" destination="ZgO-bN-TED" id="EbJ-Tr-2Kj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0q-B9-I6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="903"/>
+            <point key="canvasLocation" x="1236" y="902.69865067466276"/>
         </scene>
         <!--Item-->
         <scene sceneID="p4K-1B-3hv">

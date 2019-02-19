@@ -12,10 +12,12 @@ class cartVC: UIViewController {
     
     
     var carts = [Cart]()
+    var cartsss = 0.0
     var count = 0
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var totalPrice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +25,9 @@ class cartVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        
         customBackBtton()
-        handleRefresh()
+        //handleRefresh()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,11 +40,15 @@ class cartVC: UIViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    
+    
     @objc private func handleRefresh() {
+        self.cartsss = 0.0
         API_Cart.cart{ (error: Error?, carts: [Cart]?) in
             if let carts = carts {
                 self.carts = carts
                 print("xxx\(self.carts)")
+                self.totalPric()
                 self.tableView.reloadData()
                 if let tabItems = self.tabBarController?.tabBar.items {
                     let tabItem = tabItems[1]
@@ -50,6 +57,34 @@ class cartVC: UIViewController {
             }
         }
         
+    }
+    
+    func totalPric() {
+        for cart in carts {
+            self.cartsss =  Double(cart.totalPrice) + self.cartsss
+        }
+        self.totalPrice.text = "\(self.cartsss) ريال"
+        print(self.cartsss)
+    }
+    
+    
+    
+    @IBAction func odrer(_ sender: Any) {
+        guard (helper.getAPIToken() != nil)  else {
+            let message = NSLocalizedString("please login frist", comment: "hhhh")
+            let title = NSLocalizedString("Filed to request order", comment: "profuct list lang")
+            self.showAlert(title: title, message: message)
+            return
+        }
+        
+        guard (carts.count != 0)  else {
+            let message = NSLocalizedString("please Add somthing to cart first", comment: "hhhh")
+            let title = NSLocalizedString("Filed to request order", comment: "profuct list lang")
+            self.showAlert(title: title, message: message)
+            return
+        }
+        
+        performSegue(withIdentifier: "suge", sender: nil)
     }
 }
 
