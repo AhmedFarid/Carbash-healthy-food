@@ -28,6 +28,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        // Make sure that URL scheme is identical to the registered one
+        if url.scheme?.localizedCaseInsensitiveCompare(Configs.urlScheme) == .orderedSame {
+            // Send notification to handle result in the view controller.
+            NotificationCenter.default.post(name: Notification.Name(rawValue: Configs.asyncPaymentCompletedNotificationKey), object: nil)
+            return true
+        }
+        return false
+    }
+    
+    func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
+        if (extensionPointIdentifier == UIApplication.ExtensionPointIdentifier.keyboard) {
+            return false
+        }
+        return true
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

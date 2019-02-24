@@ -143,7 +143,7 @@ class API_Cart: NSObject {
         
     }
     
-    class func orderCart(phone: String,address: String, lat: Double, lng: Double, completion: @escaping (_ error: Error?, _ success: Bool, _ data: Int?, _ totalePrice: Int?)->Void) {
+    class func orderCart(phone: String, lat: Double, lng: Double, completion: @escaping (_ error: Error?, _ success: Bool, _ data: Int?, _ totalePrice: Int?)->Void) {
         
         
         guard let user_token = helper.getAPIToken() else {
@@ -157,7 +157,6 @@ class API_Cart: NSObject {
         let parameters = [
             "user_token" : user_token,
             "phone": phone,
-            "address": address,
             "lat": lat,
             "lng": lng
             ] as [String : Any]

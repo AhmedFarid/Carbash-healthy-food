@@ -36,6 +36,9 @@ struct URLs {
     static let consultings = main + "consultings"
     static let subscribe = main + "subscribe"
     static let getSubscribe = main + "getSubscribe"
+    static let checkout = main + "checkout"
+    static let paymentId = main + "paymentId"
+    static let storeData = main + "storeData"
     
     
 }

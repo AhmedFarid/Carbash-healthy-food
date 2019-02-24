@@ -13,6 +13,7 @@ class detailsPackagesVC: UIViewController {
     var type = ""
     var id = ""
     var banners = [backageBanner]()
+    var amount = ""
     
     
     
@@ -55,6 +56,7 @@ class detailsPackagesVC: UIViewController {
                     self.startTimer()
                     self.name.text = name
                     self.price.text = "\(price ?? "") ريال "
+                    self.amount = price ?? ""
                     self.schudel.text = type
                     self.des.text = "\(description ?? "")"
                     self.id = id ?? ""
@@ -80,12 +82,31 @@ class detailsPackagesVC: UIViewController {
     
     
     @IBAction func subbutton(_ sender: Any) {
-        API_Package.subscribe(package_id: id){ (error: Error?, success: Bool, data) in
-            if success {
-                self.showAlert(title: "اشتراك", message: data ?? "")
-            }else {
-                
-            }
+        
+        guard (helper.getAPIToken() != nil)  else {
+            let message = NSLocalizedString("please login frist", comment: "hhhh")
+            let title = NSLocalizedString("Filed to request order", comment: "profuct list lang")
+            self.showAlert(title: title, message: message)
+            return
+        }
+        
+        performSegue(withIdentifier: "suge", sender: nil)
+        
+//        API_Package.subscribe(package_id: id){ (error: Error?, success: Bool, data) in
+//            if success {
+//                self.showAlert(title: "اشتراك", message: data ?? "")
+//            }else {
+//
+//            }
+//        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? orderCartVC{
+            destaiantion.amount = Int(self.amount) ?? 0
+            destaiantion.type = "bakage"
+            destaiantion.id = id
+            
         }
     }
     

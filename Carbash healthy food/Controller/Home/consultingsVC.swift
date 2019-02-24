@@ -9,7 +9,7 @@
 import UIKit
 
 class consultingsVC: UIViewController {
-
+    
     @IBOutlet weak var nameTXT: UITextField!
     @IBOutlet weak var phoneTxt: UITextField!
     @IBOutlet weak var emailTXT: UITextField!
@@ -17,7 +17,7 @@ class consultingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     @IBAction func sendTXt(_ sender: Any) {
         
@@ -48,13 +48,25 @@ class consultingsVC: UIViewController {
         }
         
         
-        API_Consultings.consultings(name: nameTXT.text ?? "", email: emailTXT.text ?? "", phone: phoneTxt.text ?? "", message: messageTXT.text ?? ""){ (error: Error?, success, data) in
-            if success {
-                let title = NSLocalizedString("Added", comment: "profuct list lang")
-                self.showAlert(title: title, message: data ?? "")
-            }else {
-                print("Error")
-            }
+//        API_Consultings.consultings(name: nameTXT.text ?? "", email: emailTXT.text ?? "", phone: phoneTxt.text ?? "", message: messageTXT.text ?? ""){ (error: Error?, success, data) in
+//            if success {
+//                let title = NSLocalizedString("Added", comment: "profuct list lang")
+//                self.showAlert(title: title, message: data ?? "")
+//            }else {
+//                print("Error")
+//            }
+//        }
+        
+        performSegue(withIdentifier: "suge", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? orderCartVC{
+            destaiantion.amount = 120
+            destaiantion.type = "consult"
+            destaiantion.name = nameTXT.text ?? ""
+            destaiantion.phone = phoneTxt.text ?? ""
+            destaiantion.email = emailTXT.text ?? ""
+            destaiantion.message = messageTXT.text ?? ""
         }
         
     }

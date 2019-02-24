@@ -17,6 +17,8 @@
 		75304652220C8940009E2856 /* myOrdersDetialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304651220C8940009E2856 /* myOrdersDetialsVC.swift */; };
 		75304654220C8BEC009E2856 /* API + Consultings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304653220C8BEC009E2856 /* API + Consultings.swift */; };
 		75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304655220C8DB2009E2856 /* consultingsVC.swift */; };
+		7535DA99221C551D003B5419 /* OPPWAMobile-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7535DA97221C551B003B5419 /* OPPWAMobile-Resources.bundle */; };
+		7535DA9A221C551D003B5419 /* OPPWAMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7535DA98221C551D003B5419 /* OPPWAMobile.framework */; };
 		75821D2D221161590067DF96 /* API + Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2C221161590067DF96 /* API + Package.swift */; };
 		75821D2F221174750067DF96 /* packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2E221174750067DF96 /* packages.swift */; };
 		75821D312211794D0067DF96 /* myBakageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D302211794D0067DF96 /* myBakageCell.swift */; };
@@ -45,6 +47,7 @@
 		7591AB6C2201D0690077413C /* roundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591AB6B2201D0690077413C /* roundView.swift */; };
 		7591AB6F2201E1350077413C /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591AB6E2201E1350077413C /* homeVC.swift */; };
 		7591AB712201F6730077413C /* roundedTxtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7591AB702201F6720077413C /* roundedTxtView.swift */; };
+		75A0F2AA221EA31B00CA48A5 /* API+Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0F2A9221EA31B00CA48A5 /* API+Payment.swift */; };
 		75AE0529220985CD00CCD579 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE0528220985CD00CCD579 /* Cart.swift */; };
 		75AE052B2209870500CCD579 /* API+Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE052A2209870500CCD579 /* API+Cart.swift */; };
 		75AE052D22098BB800CCD579 /* cartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE052C22098BB800CCD579 /* cartCell.swift */; };
@@ -56,6 +59,10 @@
 		75B362C822032D1A00782D51 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B362C722032D1A00782D51 /* profileVC.swift */; };
 		75B362CA220331B300782D51 /* API+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B362C9220331B300782D51 /* API+Profile.swift */; };
 		75B362CC22034B9500782D51 /* editProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B362CB22034B9500782D51 /* editProfileVC.swift */; };
+		75D9F5A9221DAAEE009925D6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9F5A8221DAAEE009925D6 /* Utils.swift */; };
+		75D9F5AB221DAB37009925D6 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9F5AA221DAB37009925D6 /* Configs.swift */; };
+		75D9F5AD221DAC57009925D6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9F5AC221DAC57009925D6 /* Request.swift */; };
+		75D9F5AF221DBCE5009925D6 /* paymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D9F5AE221DBCE5009925D6 /* paymentVC.swift */; };
 		75EB32972200A43A00B93BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EB32962200A43A00B93BF4 /* AppDelegate.swift */; };
 		75EB329C2200A43A00B93BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EB329A2200A43A00B93BF4 /* Main.storyboard */; };
 		75EB329E2200A43B00B93BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EB329D2200A43B00B93BF4 /* Assets.xcassets */; };
@@ -76,6 +83,9 @@
 		75304651220C8940009E2856 /* myOrdersDetialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrdersDetialsVC.swift; sourceTree = "<group>"; };
 		75304653220C8BEC009E2856 /* API + Consultings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Consultings.swift"; sourceTree = "<group>"; };
 		75304655220C8DB2009E2856 /* consultingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = consultingsVC.swift; sourceTree = "<group>"; };
+		7535DA97221C551B003B5419 /* OPPWAMobile-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "OPPWAMobile-Resources.bundle"; sourceTree = "<group>"; };
+		7535DA98221C551D003B5419 /* OPPWAMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPPWAMobile.framework; sourceTree = "<group>"; };
+		7535DA9B221C5604003B5419 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		75821D2C221161590067DF96 /* API + Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Package.swift"; sourceTree = "<group>"; };
 		75821D2E221174750067DF96 /* packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packages.swift; sourceTree = "<group>"; };
 		75821D302211794D0067DF96 /* myBakageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBakageCell.swift; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 		7591AB6B2201D0690077413C /* roundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundView.swift; sourceTree = "<group>"; };
 		7591AB6E2201E1350077413C /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
 		7591AB702201F6720077413C /* roundedTxtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedTxtView.swift; sourceTree = "<group>"; };
+		75A0F2A9221EA31B00CA48A5 /* API+Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Payment.swift"; sourceTree = "<group>"; };
 		75AE0528220985CD00CCD579 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		75AE052A2209870500CCD579 /* API+Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Cart.swift"; sourceTree = "<group>"; };
 		75AE052C22098BB800CCD579 /* cartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartCell.swift; sourceTree = "<group>"; };
@@ -115,6 +126,10 @@
 		75B362C722032D1A00782D51 /* profileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		75B362C9220331B300782D51 /* API+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Profile.swift"; sourceTree = "<group>"; };
 		75B362CB22034B9500782D51 /* editProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileVC.swift; sourceTree = "<group>"; };
+		75D9F5A8221DAAEE009925D6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		75D9F5AA221DAB37009925D6 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		75D9F5AC221DAC57009925D6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		75D9F5AE221DBCE5009925D6 /* paymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentVC.swift; sourceTree = "<group>"; };
 		75EB32932200A43A00B93BF4 /* Carbash healthy food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carbash healthy food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75EB32962200A43A00B93BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75EB329B2200A43A00B93BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7535DA9A221C551D003B5419 /* OPPWAMobile.framework in Frameworks */,
 				166FF3F4B2C2B9E0A4F62423 /* Pods_Carbash_healthy_food.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +193,7 @@
 			children = (
 				758E77ED2208782E00046DBC /* cartVC.swift */,
 				75304646220C5D23009E2856 /* orderCartVC.swift */,
+				75D9F5AE221DBCE5009925D6 /* paymentVC.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 				75304648220C76F3009E2856 /* API + Myorder.swift */,
 				75304653220C8BEC009E2856 /* API + Consultings.swift */,
 				75821D2C221161590067DF96 /* API + Package.swift */,
+				75A0F2A9221EA31B00CA48A5 /* API+Payment.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -269,6 +287,9 @@
 			isa = PBXGroup;
 			children = (
 				75B362BC2202FBDA00782D51 /* Cofig.swift */,
+				75D9F5A8221DAAEE009925D6 /* Utils.swift */,
+				75D9F5AA221DAB37009925D6 /* Configs.swift */,
+				75D9F5AC221DAC57009925D6 /* Request.swift */,
 			);
 			path = URLS;
 			sourceTree = "<group>";
@@ -317,6 +338,7 @@
 				7582BE952200E3200016FC9A /* View */,
 				75EB32A82200A44D00B93BF4 /* Fonts */,
 				7591AB692201AF080077413C /* storyboard */,
+				7535DA9B221C5604003B5419 /* Header.h */,
 			);
 			path = "Carbash healthy food";
 			sourceTree = "<group>";
@@ -343,6 +365,8 @@
 			isa = PBXGroup;
 			children = (
 				C725145A7FA28F96343C924F /* Pods_Carbash_healthy_food.framework */,
+				7535DA97221C551B003B5419 /* OPPWAMobile-Resources.bundle */,
+				7535DA98221C551D003B5419 /* OPPWAMobile.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -408,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7591AB662201AD9D0077413C /* myOrders.storyboard in Resources */,
+				7535DA99221C551D003B5419 /* OPPWAMobile-Resources.bundle in Resources */,
 				75EB32A12200A43B00B93BF4 /* LaunchScreen.storyboard in Resources */,
 				7591AB622201A5D30077413C /* home.storyboard in Resources */,
 				7591AB682201AEF90077413C /* profile.storyboard in Resources */,
@@ -472,10 +497,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B362BF2202FD0F00782D51 /* API+Auth.swift in Sources */,
+				75D9F5AD221DAC57009925D6 /* Request.swift in Sources */,
 				7587855B2206F4F300CE0397 /* BannerCell.swift in Sources */,
+				75D9F5AB221DAB37009925D6 /* Configs.swift in Sources */,
 				75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */,
 				7582BE982200E4EA0016FC9A /* loginVC.swift in Sources */,
 				75304647220C5D23009E2856 /* orderCartVC.swift in Sources */,
+				75A0F2AA221EA31B00CA48A5 /* API+Payment.swift in Sources */,
 				7591AB6F2201E1350077413C /* homeVC.swift in Sources */,
 				75B362C122030E1C00782D51 /* showAlert.swift in Sources */,
 				75B362CA220331B300782D51 /* API+Profile.swift in Sources */,
@@ -486,6 +514,7 @@
 				75304652220C8940009E2856 /* myOrdersDetialsVC.swift in Sources */,
 				7587855F22071CB900CE0397 /* mailDeatilesVC.swift in Sources */,
 				75304650220C878D009E2856 /* myorderDetials.swift in Sources */,
+				75D9F5A9221DAAEE009925D6 /* Utils.swift in Sources */,
 				7591AB712201F6730077413C /* roundedTxtView.swift in Sources */,
 				758785572206F38400CE0397 /* home.swift in Sources */,
 				75B362CC22034B9500782D51 /* editProfileVC.swift in Sources */,
@@ -495,6 +524,7 @@
 				75EB32972200A43A00B93BF4 /* AppDelegate.swift in Sources */,
 				75821D312211794D0067DF96 /* myBakageCell.swift in Sources */,
 				75B362C52203264F00782D51 /* roundedLable.swift in Sources */,
+				75D9F5AF221DBCE5009925D6 /* paymentVC.swift in Sources */,
 				7530464B220C8055009E2856 /* myordersCell.swift in Sources */,
 				758785592206F3DE00CE0397 /* API+Home.swift in Sources */,
 				758E77EE2208782E00046DBC /* cartVC.swift in Sources */,
@@ -665,6 +695,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Carbash healthy food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -673,6 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ebakers.Carbash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Ebakers.Carbash;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/farid/Documents/Hyperapy SDK2.31 2/iOS_OPPWAMobile_2.31.0/Demo/Carbash healthy food/Carbash healthy food/Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -686,6 +721,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 4Z34DQ34UQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Carbash healthy food/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -694,6 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Ebakers.Carbash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Ebakers.Carbash;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/farid/Documents/Hyperapy SDK2.31 2/iOS_OPPWAMobile_2.31.0/Demo/Carbash healthy food/Carbash healthy food/Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

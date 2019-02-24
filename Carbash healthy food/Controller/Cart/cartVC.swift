@@ -12,7 +12,7 @@ class cartVC: UIViewController {
     
     
     var carts = [Cart]()
-    var cartsss = 0.0
+    var cartsss = 0
     var count = 0
     
     
@@ -43,7 +43,7 @@ class cartVC: UIViewController {
     
     
     @objc private func handleRefresh() {
-        self.cartsss = 0.0
+        self.cartsss = 0
         API_Cart.cart{ (error: Error?, carts: [Cart]?) in
             if let carts = carts {
                 self.carts = carts
@@ -61,7 +61,7 @@ class cartVC: UIViewController {
     
     func totalPric() {
         for cart in carts {
-            self.cartsss =  Double(cart.totalPrice) + self.cartsss
+            self.cartsss =  Int(cart.totalPrice) + self.cartsss
         }
         self.totalPrice.text = "\(self.cartsss) ريال"
         print(self.cartsss)
@@ -85,6 +85,13 @@ class cartVC: UIViewController {
         }
         
         performSegue(withIdentifier: "suge", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destaiantion = segue.destination as? orderCartVC{
+            destaiantion.amount = self.cartsss
+            destaiantion.type = "cart"
+        }
     }
 }
 
