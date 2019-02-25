@@ -97,13 +97,33 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-8i-RQc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل دخول اولا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrp-j7-C2U">
+                                        <rect key="frame" x="89" y="273.5" width="197" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vrp-j7-C2U" firstAttribute="centerY" secondItem="XvJ-8i-RQc" secondAttribute="centerY" id="EPW-kd-HMi"/>
+                                    <constraint firstItem="vrp-j7-C2U" firstAttribute="centerX" secondItem="XvJ-8i-RQc" secondAttribute="centerX" id="dSG-FI-LER"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="XvJ-8i-RQc" firstAttribute="top" secondItem="PCI-NP-SOv" secondAttribute="top" id="99e-oH-4ig"/>
                             <constraint firstItem="NIo-Ka-gsa" firstAttribute="leading" secondItem="PCI-NP-SOv" secondAttribute="leading" id="R7M-eJ-w1e"/>
                             <constraint firstItem="NIo-Ka-gsa" firstAttribute="top" secondItem="PCI-NP-SOv" secondAttribute="top" id="RgD-o9-M7b"/>
                             <constraint firstItem="NIo-Ka-gsa" firstAttribute="trailing" secondItem="PCI-NP-SOv" secondAttribute="trailing" id="Xhg-RH-5Jj"/>
+                            <constraint firstItem="XvJ-8i-RQc" firstAttribute="leading" secondItem="PCI-NP-SOv" secondAttribute="leading" id="Z6r-Se-KRQ"/>
+                            <constraint firstAttribute="bottom" secondItem="XvJ-8i-RQc" secondAttribute="bottom" id="ioJ-uI-Iy8"/>
                             <constraint firstItem="PCI-NP-SOv" firstAttribute="bottom" secondItem="NIo-Ka-gsa" secondAttribute="bottom" id="mtT-qV-aCG"/>
+                            <constraint firstAttribute="trailing" secondItem="XvJ-8i-RQc" secondAttribute="trailing" id="nbr-RU-rr4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PCI-NP-SOv"/>
                     </view>
@@ -113,6 +133,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="NIo-Ka-gsa" id="DsE-5m-HnE"/>
+                        <outlet property="viewsss" destination="XvJ-8i-RQc" id="owS-Yf-SDG"/>
                         <segue destination="Sa9-vV-SpW" kind="show" identifier="suge" id="5vb-yK-u2v"/>
                     </connections>
                 </viewController>

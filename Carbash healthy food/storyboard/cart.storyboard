@@ -209,19 +209,39 @@
                                     <action selector="odrer:" destination="dO2-CV-nqA" eventType="touchUpInside" id="yN4-mS-Oai"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-ay-H0G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل دخول اولا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-tq-SuU">
+                                        <rect key="frame" x="89" y="273.5" width="197" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9fy-tq-SuU" firstAttribute="centerY" secondItem="ihO-ay-H0G" secondAttribute="centerY" id="9MQ-nk-u5w"/>
+                                    <constraint firstItem="9fy-tq-SuU" firstAttribute="centerX" secondItem="ihO-ay-H0G" secondAttribute="centerX" id="Yn7-0h-kQT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pP7-sx-x40" firstAttribute="top" secondItem="L6p-G7-bU3" secondAttribute="top" id="0KV-FS-bpf"/>
+                            <constraint firstItem="ihO-ay-H0G" firstAttribute="leading" secondItem="L6p-G7-bU3" secondAttribute="leading" id="5B8-nE-6Ls"/>
                             <constraint firstItem="L6p-G7-bU3" firstAttribute="trailing" secondItem="pP7-sx-x40" secondAttribute="trailing" id="7H1-QP-B8z"/>
                             <constraint firstItem="L6p-G7-bU3" firstAttribute="trailing" secondItem="d1C-SI-MOg" secondAttribute="trailing" constant="92" id="DH9-3y-9S5"/>
                             <constraint firstItem="yoe-jT-v6j" firstAttribute="trailing" secondItem="L6p-G7-bU3" secondAttribute="trailing" constant="-8" id="IFg-7E-f4p"/>
                             <constraint firstItem="d1C-SI-MOg" firstAttribute="top" secondItem="yoe-jT-v6j" secondAttribute="bottom" constant="8" id="Pnz-35-QoA"/>
+                            <constraint firstAttribute="bottom" secondItem="ihO-ay-H0G" secondAttribute="bottom" id="RtN-oZ-zdh"/>
                             <constraint firstItem="d1C-SI-MOg" firstAttribute="leading" secondItem="L6p-G7-bU3" secondAttribute="leading" constant="91" id="U1u-VI-k3O"/>
                             <constraint firstItem="yoe-jT-v6j" firstAttribute="leading" secondItem="L6p-G7-bU3" secondAttribute="leading" constant="8" id="VXk-q2-NFi"/>
+                            <constraint firstItem="ihO-ay-H0G" firstAttribute="top" secondItem="L6p-G7-bU3" secondAttribute="top" id="ZqG-4i-OOv"/>
                             <constraint firstItem="yoe-jT-v6j" firstAttribute="top" secondItem="pP7-sx-x40" secondAttribute="bottom" constant="8" id="b9b-oa-ziD"/>
                             <constraint firstItem="pP7-sx-x40" firstAttribute="leading" secondItem="L6p-G7-bU3" secondAttribute="leading" id="kCa-dq-1Ro"/>
                             <constraint firstItem="L6p-G7-bU3" firstAttribute="bottom" secondItem="d1C-SI-MOg" secondAttribute="bottom" constant="8" id="mSa-za-28U"/>
+                            <constraint firstAttribute="trailing" secondItem="ihO-ay-H0G" secondAttribute="trailing" id="pco-3w-DRX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L6p-G7-bU3"/>
                     </view>
@@ -232,6 +252,7 @@
                     <connections>
                         <outlet property="tableView" destination="pP7-sx-x40" id="6dl-qG-Kr4"/>
                         <outlet property="totalPrice" destination="Bxu-Y8-vNF" id="Fbp-O8-d8G"/>
+                        <outlet property="viewsss" destination="ihO-ay-H0G" id="wBC-D3-okz"/>
                         <segue destination="JcY-zd-hAq" kind="show" identifier="suge" id="GoZ-Jb-xCw"/>
                     </connections>
                 </viewController>

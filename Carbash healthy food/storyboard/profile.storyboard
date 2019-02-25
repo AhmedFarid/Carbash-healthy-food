@@ -158,25 +158,42 @@
                                     <action selector="editBtn:" destination="klh-ry-A3S" eventType="touchUpInside" id="akN-9c-5xq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMy-fD-4T3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سجل دخول اولا" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0S-n1-7Z4">
+                                        <rect key="frame" x="89" y="273.5" width="197" height="56.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="z0S-n1-7Z4" firstAttribute="centerX" secondItem="eMy-fD-4T3" secondAttribute="centerX" id="8vp-iL-MX5"/>
+                                    <constraint firstItem="z0S-n1-7Z4" firstAttribute="centerY" secondItem="eMy-fD-4T3" secondAttribute="centerY" id="Mwc-ZJ-mLV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OGW-gJ-a4m" firstAttribute="trailing" secondItem="9Om-RS-l5v" secondAttribute="trailing" id="08Y-sA-VUi"/>
                             <constraint firstItem="9Om-RS-l5v" firstAttribute="leading" secondItem="FNU-NR-eXz" secondAttribute="leading" constant="16" id="4Wz-LM-kjB"/>
                             <constraint firstItem="9Om-RS-l5v" firstAttribute="top" secondItem="OGW-gJ-a4m" secondAttribute="bottom" constant="8" id="7ti-Iv-axi"/>
+                            <constraint firstItem="eMy-fD-4T3" firstAttribute="trailing" secondItem="FNU-NR-eXz" secondAttribute="trailing" id="IS2-kM-mfd"/>
                             <constraint firstItem="cA1-in-OdF" firstAttribute="centerX" secondItem="wcM-sR-WBc" secondAttribute="centerX" id="QOw-SZ-5Kw"/>
+                            <constraint firstItem="eMy-fD-4T3" firstAttribute="leading" secondItem="FNU-NR-eXz" secondAttribute="leading" id="U8F-xV-xVe"/>
+                            <constraint firstItem="eMy-fD-4T3" firstAttribute="bottom" secondItem="FNU-NR-eXz" secondAttribute="bottom" id="bWG-yI-04g"/>
                             <constraint firstItem="9Om-RS-l5v" firstAttribute="top" secondItem="cA1-in-OdF" secondAttribute="bottom" constant="15" id="djW-QX-XaL"/>
                             <constraint firstItem="FNU-NR-eXz" firstAttribute="trailing" secondItem="9Om-RS-l5v" secondAttribute="trailing" constant="16" id="iQS-yx-oNx"/>
                             <constraint firstItem="cA1-in-OdF" firstAttribute="top" secondItem="FNU-NR-eXz" secondAttribute="top" constant="8" id="lD0-B0-GBF"/>
+                            <constraint firstItem="eMy-fD-4T3" firstAttribute="top" secondItem="FNU-NR-eXz" secondAttribute="top" id="t7o-fK-lle"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FNU-NR-eXz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="User" id="dLf-xm-oJg"/>
                     <navigationItem key="navigationItem" id="fhs-Vb-VUx">
-                        <rightBarButtonItems>
-                            <barButtonItem image="favorite-heart-button" id="Hyy-En-Tup"/>
-                            <barButtonItem image="notifications-button" id="7iY-Zq-f4R"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="notifications-button" id="7iY-Zq-f4R"/>
                     </navigationItem>
                     <connections>
                         <outlet property="address" destination="ssg-df-fgk" id="bvJ-x0-NzO"/>
@@ -184,6 +201,8 @@
                         <outlet property="image" destination="cA1-in-OdF" id="6ZG-1w-I3R"/>
                         <outlet property="name" destination="3cc-XJ-Xd1" id="PlI-Jh-Pj4"/>
                         <outlet property="phone" destination="rft-o2-WfH" id="rLm-1C-9w8"/>
+                        <outlet property="text" destination="z0S-n1-7Z4" id="aEy-Io-LQV"/>
+                        <outlet property="viwess" destination="eMy-fD-4T3" id="b1J-ti-E0I"/>
                         <segue destination="xmG-Bo-EV5" kind="show" identifier="suge" id="y8Z-gK-3mU"/>
                     </connections>
                 </viewController>
@@ -665,7 +684,6 @@
     </scenes>
     <resources>
         <image name="User" width="20" height="25"/>
-        <image name="favorite-heart-button" width="20" height="20"/>
         <image name="notifications-button" width="20.5" height="20.5"/>
     </resources>
 </document>

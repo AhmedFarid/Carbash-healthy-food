@@ -79,6 +79,12 @@ class mailDeatilesVC: UIViewController {
     }
     @IBAction func addToCart(_ sender: Any) {
         print("cc")
+        guard (helper.getAPIToken() != nil)  else {
+            let message = NSLocalizedString("please login frist", comment: "hhhh")
+            let title = NSLocalizedString("Filed to request order", comment: "profuct list lang")
+            self.showAlert(title: title, message: message)
+            return
+        }
         API_Home.postCart(meal_foods_id: singleItem?.id ?? "") { (error: Error?, success: Bool, data) in
             if success {
                 self.showAlert(title: "اضافة للسلة", message: data ?? "")

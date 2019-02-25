@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let user_token = helper.getAPIToken(){
             print("user_token\(user_token)")
             //go to main page
-            let tab = UIStoryboard(name: "home", bundle: nil).instantiateInitialViewController()
+            let tab = UIStoryboard(name: "home", bundle: nil).instantiateViewController(withIdentifier: "main")
             window?.rootViewController = tab
         }
         

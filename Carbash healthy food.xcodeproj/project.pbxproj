@@ -19,6 +19,9 @@
 		75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75304655220C8DB2009E2856 /* consultingsVC.swift */; };
 		7535DA99221C551D003B5419 /* OPPWAMobile-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7535DA97221C551B003B5419 /* OPPWAMobile-Resources.bundle */; };
 		7535DA9A221C551D003B5419 /* OPPWAMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7535DA98221C551D003B5419 /* OPPWAMobile.framework */; };
+		756D7FB6222305CC0012F0E8 /* 44.gif in Resources */ = {isa = PBXBuildFile; fileRef = 756D7FB5222305CC0012F0E8 /* 44.gif */; };
+		756D7FB8222307570012F0E8 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D7FB7222307570012F0E8 /* gif.swift */; };
+		756D7FBA222307B50012F0E8 /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756D7FB9222307B50012F0E8 /* iOSDevCenters+GIF.swift */; };
 		75821D2D221161590067DF96 /* API + Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2C221161590067DF96 /* API + Package.swift */; };
 		75821D2F221174750067DF96 /* packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D2E221174750067DF96 /* packages.swift */; };
 		75821D312211794D0067DF96 /* myBakageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75821D302211794D0067DF96 /* myBakageCell.swift */; };
@@ -86,6 +89,9 @@
 		7535DA97221C551B003B5419 /* OPPWAMobile-Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "OPPWAMobile-Resources.bundle"; sourceTree = "<group>"; };
 		7535DA98221C551D003B5419 /* OPPWAMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OPPWAMobile.framework; sourceTree = "<group>"; };
 		7535DA9B221C5604003B5419 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		756D7FB5222305CC0012F0E8 /* 44.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 44.gif; sourceTree = "<group>"; };
+		756D7FB7222307570012F0E8 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
+		756D7FB9222307B50012F0E8 /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		75821D2C221161590067DF96 /* API + Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API + Package.swift"; sourceTree = "<group>"; };
 		75821D2E221174750067DF96 /* packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packages.swift; sourceTree = "<group>"; };
 		75821D302211794D0067DF96 /* myBakageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBakageCell.swift; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 				75B362C42203264F00782D51 /* roundedLable.swift */,
 				758E77EA22086C7A00046DBC /* cricalImage.swift */,
 				751A13EA2209C6340027B1F0 /* TabBarController.swift */,
+				756D7FB9222307B50012F0E8 /* iOSDevCenters+GIF.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 				75B362C622032B8400782D51 /* Profile */,
 				7591AB6D2201E1190077413C /* Home */,
 				7591AB6A2201B3C60077413C /* Auht */,
+				756D7FB7222307570012F0E8 /* gif.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 		75EB32A82200A44D00B93BF4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				756D7FB5222305CC0012F0E8 /* 44.gif */,
 				75EB32AA2200A46000B93BF4 /* Cairo-Bold.ttf */,
 				75EB32A92200A46000B93BF4 /* Cairo-Regular.ttf */,
 			);
@@ -441,6 +450,7 @@
 				75EB32AB2200A46000B93BF4 /* Cairo-Regular.ttf in Resources */,
 				7591AB642201AC2D0077413C /* cart.storyboard in Resources */,
 				75EB329C2200A43A00B93BF4 /* Main.storyboard in Resources */,
+				756D7FB6222305CC0012F0E8 /* 44.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +511,10 @@
 				7587855B2206F4F300CE0397 /* BannerCell.swift in Sources */,
 				75D9F5AB221DAB37009925D6 /* Configs.swift in Sources */,
 				75304656220C8DB2009E2856 /* consultingsVC.swift in Sources */,
+				756D7FBA222307B50012F0E8 /* iOSDevCenters+GIF.swift in Sources */,
 				7582BE982200E4EA0016FC9A /* loginVC.swift in Sources */,
 				75304647220C5D23009E2856 /* orderCartVC.swift in Sources */,
+				756D7FB8222307570012F0E8 /* gif.swift in Sources */,
 				75A0F2AA221EA31B00CA48A5 /* API+Payment.swift in Sources */,
 				7591AB6F2201E1350077413C /* homeVC.swift in Sources */,
 				75B362C122030E1C00782D51 /* showAlert.swift in Sources */,

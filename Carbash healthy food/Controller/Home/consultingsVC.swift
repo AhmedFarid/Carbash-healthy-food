@@ -22,6 +22,13 @@ class consultingsVC: UIViewController {
     @IBAction func sendTXt(_ sender: Any) {
         
         
+        guard (helper.getAPIToken() != nil)  else {
+            let messages = NSLocalizedString("please login frist", comment: "hhhh")
+            let title = NSLocalizedString("Filed to request order", comment: "profuct list lang")
+            self.showAlert(title: title, message: messages)
+            return
+        }
+        
         guard let name = nameTXT.text, !name.isEmpty else {
             let messages = NSLocalizedString("ادخل الاسم", comment: "hhhh")
             let title = NSLocalizedString("طلب استشاره", comment: "hhhh")

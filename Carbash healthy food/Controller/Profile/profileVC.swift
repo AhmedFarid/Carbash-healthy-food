@@ -16,6 +16,8 @@ class profileVC: UIViewController {
     @IBOutlet weak var email: roundedLable!
     @IBOutlet weak var phone: roundedLable!
     @IBOutlet weak var address: roundedLable!
+    @IBOutlet weak var text: UILabel!
+    @IBOutlet weak var viwess: UIView!
     
     var images = ""
     var names = ""
@@ -25,6 +27,14 @@ class profileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if helper.getAPIToken() != nil {
+            viwess.isHidden = true
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "تسجيل خروج", style: .plain, target: self, action: #selector(Logout))
+        }else {
+            viwess.isHidden = false
+            navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        }
         
         customBackBtton()
         getDat()
@@ -36,6 +46,11 @@ class profileVC: UIViewController {
         
         
     }
+    
+    @objc func Logout() {
+        helper.dleteAPIToken()
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         getDat()
@@ -77,7 +92,6 @@ class profileVC: UIViewController {
             
         }
     }
-    
     
     @IBAction func editBtn(_ sender: Any) {
         performSegue(withIdentifier: "suge", sender: nil)

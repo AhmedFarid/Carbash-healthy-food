@@ -11,11 +11,13 @@ import UIKit
 class helper: NSObject {
     class func restartApp(){
         guard let window = UIApplication.shared.keyWindow else {return}
-        let sb = UIStoryboard(name: "home", bundle: nil)
+        
         var vc: UIViewController
         if getAPIToken() == nil {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
             vc = sb.instantiateInitialViewController()!
         }else {
+            let sb = UIStoryboard(name: "home", bundle: nil)
             vc = sb.instantiateViewController(withIdentifier: "main")
         }
         window.rootViewController = vc

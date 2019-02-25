@@ -14,8 +14,15 @@ class myOrdersVC: UIViewController {
     var myorder = [myorders]()
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewsss: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if helper.getAPIToken() != nil {
+            viewsss.isHidden = true
+        }else {
+            viewsss.isHidden = false
+        }
         
         tableView.delegate = self
         tableView.dataSource = self

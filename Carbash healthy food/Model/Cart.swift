@@ -37,8 +37,6 @@ class Cart: NSObject {
 
 
 class myorders: NSObject {
-    
-    
     var orderId: String
     var totalPrice: String
     var date: String
